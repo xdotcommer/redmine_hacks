@@ -1,4 +1,4 @@
-class Issue < ActiveRecord::Base
+class Issue
   after_save :set_position_to_backlog_rank
   
   def set_position_to_backlog_rank
